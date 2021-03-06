@@ -1,7 +1,7 @@
 library(data.table)
 
 #“Individual household electric power consumption Data Set” 
-IHE <- read.table("E:/CURSO R JOHNS HOPKINS UNIVERSITY/4 Exploratory Data Analysis/Semana 1/Proyecto 1/household_power_consumption.txt", header=TRUE, sep=";", na.strings = "?")
+IHE <- read.table("E:/household_power_consumption.txt", header=TRUE, sep=";", na.strings = "?")
 #Give Date theDate format
 IHE$Date <- as.Date(IHE$Date, "%d/%m/%Y")
 #Subsetting the date between 2007-02-01 and 2007-02-02
